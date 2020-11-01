@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1069</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>310</y>
+      <width>68</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>进程名</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>310</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>350</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>运行时间</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="runtime">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>350</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>390</y>
+      <width>68</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>优先权</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="priority">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>390</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>430</y>
+      <width>68</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>前驱进程</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="attritube">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>430</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>470</y>
+      <width>68</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大小</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="size">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>470</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定添加</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>471</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="peacetable">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>30</y>
+      <width>481</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="outtablewidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>481</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pause_button">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>暂停cpu</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_button">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>520</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消暂停</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="cpu_widget">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>320</y>
+      <width>231</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>420</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择挂起进程</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>460</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择解挂接触</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="hang_pcb">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cancal_hangpcb">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>460</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>外存空间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>内存空间：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>内存分区表：</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>280</y>
+      <width>160</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>297</x>
+      <y>280</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>对比度调节</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1069</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
